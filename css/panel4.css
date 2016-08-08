@@ -1,0 +1,103 @@
+/*第四屏*/
+.panel4{
+  background:url(../imgs/bg3.png) no-repeat center;
+  position:relative;
+  padding:0 !important;
+  -webkit-perspective:1000; 
+  -webkit-perspective-origin: center center; 
+  -moz-perspective:1000; 
+  -moz-perspective-origin: center center; 
+  -ms-perspective:1000; 
+  -ms-perspective-origin: center center;
+}
+.panel4 .zhezhao{
+  background-color:#000;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+.panel4 .jianjie{
+  width:519px;
+  height:313px;
+  background:rgba(255,255,255,0.7);
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-156px 0 0 -260px;
+  -webkit-transform-style:preserve-3d;
+  -webkit-transform-origin:center center;
+  -moz-transform-style:preserve-3d;
+  -moz-transform-origin:center center;
+  transform-style:preserve-3d;
+  transform-origin:center center;
+  -webkit-animation:rx 1s linear;
+  -moz-animation:rx 1s linear;
+  animation:rx 1s linear;
+}
+@-webkit-keyframes rx{
+    0%{ -webkit-transform:rotateX(90deg);}
+    80%{ -webkit-transform:rotateX(0deg);}
+    90%{ -webkit-transform:rotateX(20deg);}
+    100%{ -webkit-transform:rotateX(0);}
+}
+
+@-moz-keyframes rx{
+    0%{ -moz-transform:rotateX(90deg);}
+    80%{ -moz-transform:rotateX(0deg);}
+    90%{ -moz-transform:rotateX(20deg);}
+    100%{ -moz-transform:rotateX(0);}
+}
+
+@keyframes rx{
+    0%{ transform:rotateX(90deg);}
+    80%{ transform:rotateX(0deg);}
+    90%{ transform:rotateX(20deg);}
+    100%{ transform:rotateX(0);}
+}
+
+
+/*名片部分*/
+.panel4 .card{
+  -webkit-animation: fromRight 2s;
+  -moz-animation: fromRight 2s;
+  -ms-animation: fromRight 2s 
+}
+
+@-webkit-keyframes fromRight{
+    0%{ -webkit-transform:translateX(100px); opacity: 0;}
+    100%{ -webkit-transform:translateX(0); opacity: 1;}
+}
+
+@-moz-keyframes fromRight{
+    0%{ -moz-transform:translateX(100px); opacity: 0;}
+    100%{ -moz-transform:translateX(0); opacity: 1;}
+}
+
+@-ms-keyframes fromRight{
+    0%{ -ms-transform:translateX(100px); opacity: 0;}
+    100%{ -ms-transform:translateX(0); opacity: 1;}
+}
+
+@media (max-width:767px){
+  .panel4 .jianjie .touxiang img{
+    display:none;
+  }
+}
+@media (min-width:768px){
+  .panel4 .jianjie .touxiang{
+    border:2px solid #FE8503;
+    border-radius: 50%;
+    margin:80px 0 80px 20px;
+  }
+  .panel4 .jianjie .touxiang img{
+    width:100%;
+  }
+}
+
+.panel4 .jianjie .info table{
+  margin:0 auto;
+  margin-top:46px;
+}
+.panel4 .jianjie .info table th,.panel4 .jianjie .info table td{
+  height:40px;
+}

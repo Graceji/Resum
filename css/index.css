@@ -1,0 +1,19 @@
+
+@import url('navbar.css');
+@import url("panel1.css");
+@import url('panel2.css');
+@import url('panel3.css');
+@import url('panel4.css');
+
+/*主体部分*/
+.myPanel{
+  text-align: center;
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+.panel2,.panel3,.panel4{
+  /*height:731px;*/
+  padding:50px 0;
+}
+

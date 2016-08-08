@@ -1,0 +1,48 @@
+
+/*第一块背景*/
+.panel1{
+  margin-top:51px;
+}
+/*轮播图部分*/
+
+/*给背景上面的字添加动画*/
+.myCarousel .carousel-inner .carousel-caption{
+  padding-bottom: 280px;
+}
+.myCarousel .carousel-inner>.item .carousel-caption h3{
+  font-size:50px;
+  line-height: 70px;
+  transition:all ease-out 0.5s;
+  transform:translateY(25px);
+  opacity:0;
+}
+.myCarousel .carousel-inner>.item.active .carousel-caption h3{
+  transform:translateY(0px);
+  opacity:1;
+}
+.myCarousel .carousel-inner>.item .carousel-caption p{
+  font-size:16px;
+  transition:all ease-out 0.5s;
+  transition-delay:0.4s;
+  transform:translateY(25px);
+  opacity:0;
+}
+.myCarousel .carousel-inner>.item.active .carousel-caption p{
+  transform:translateY(0px);
+  opacity:1;
+}
+
+.carousel-indicators li{
+  border:1px solid #d2d2d2;
+  margin:20px 1px;
+  background:#fff;
+  width:30px;
+  height:1px;
+}
+.carousel-indicators>li.active{
+  border:1px solid #545454;
+  margin:20px 1px;
+  background:#545454;
+  width:30px;
+  height:1px;
+}
